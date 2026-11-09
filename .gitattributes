@@ -1,0 +1,14 @@
+# 実行時の改行コードを揃える（生成スクリプトは Unix 改行のまま保持）
+*.sh    text eol=lf
+*.txt   text eol=lf
+*.md    text eol=lf
+
+# バイナリは差分・変換の対象外
+*.ttf   binary
+*.png   binary
+*.zip   binary
+
+# GitHub の表示用
+*.md    linguist-documentation
+/docs/  linguist-documentation
+/scripts/ linguist-language=Shell
